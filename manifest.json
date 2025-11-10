@@ -1,0 +1,7 @@
+install.packages("rsconnect")
+setwd("/path/to/your/repo")  # make sure this is the dir with app.R
+rsconnect::writeManifest(
+  appFiles      = c("app.R"),   # include additional files if your app needs them
+  appPrimaryDoc = "app.R",
+  appMode       = "shiny"
+)
