@@ -1,7 +1,7 @@
 install.packages("rsconnect")
 setwd("https://github.com/smperry/ekspoc2.git")  # make sure this is the dir with app.R
 rsconnect::writeManifest(
-  appFiles      = c("app.R"),   # include additional files if your app needs them
-  appPrimaryDoc = "app.R",
+  appFiles      = c("myapp.R"),   # include additional files if your app needs them
+  appPrimaryDoc = "myapp.R",
   appMode       = "shiny"
 )
